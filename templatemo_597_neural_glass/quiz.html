@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Conscientização Digital</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #0a0a0a;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            background: #111;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
+        }
+
+        h1 {
+            text-align: center;
+            color: #00ffff;
+            margin-bottom: 30px;
+        }
+
+        .question {
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            color: #ff00ff;
+        }
+
+        ul.options {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul.options li {
+            margin: 8px 0;
+        }
+
+        label {
+            cursor: pointer;
+        }
+
+        .submit-btn {
+            display: block;
+            width: 100%;
+            background-color: #00ffff;
+            border: none;
+            padding: 15px;
+            font-size: 18px;
+            border-radius: 10px;
+            color: #000;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #00cccc;
+        }
+
+        #resultados {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #151515;
+            border-radius: 10px;
+            text-align: center;
+            color: #00ffff;
+        }
+
+        .gabarito {
+            margin-top: 20px;
+            font-size: 1rem;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Quiz de Conscientização Digital</h1>
+        <form id="cyberQuiz">
+            <div class="question">
+                <h3>1. De acordo com o conteúdo da seção "Segurança Digital", qual é o termo amplo utilizado para descrever qualquer programa ou arquivo criado para danificar, interromper ou obter acesso não autorizado a sistemas de computador, redes ou dados?</h3>
+                <ul class="options">
+                    <li><label><input type="radio" name="q1" value="A"> A. Ransomware</label></li>
+                    <li><label><input type="radio" name="q1" value="B"> B. Phishing</label></li>
+                    <li><label><input type="radio" name="q1" value="C"> C. Malware</label></li>
+                    <li><label><input type="radio" name="q1" value="D"> D. Engenharia Social</label></li>
+                    <li><label><input type="radio" name="q1" value="E"> E. Ataque DDoS</label></li>
+                </ul>
+            </div>
+
+            <div class="question">
+                <h3>2. O que a técnica de Phishing utiliza, conforme descrito na seção "Segurança Digital", para roubar informações confidenciais?</h3>
+                <ul class="options">
+                    <li><label><input type="radio" name="q2" value="A"> A. Exploits de "Dia Zero".</label></li>
+                    <li><label><input type="radio" name="q2" value="B"> B. Iscas, como e-mails ou sites falsos.</label></li>
+                    <li><label><input type="radio" name="q2" value="C"> C. Criptografia de dados.</label></li>
+                    <li><label><input type="radio" name="q2" value="D"> D. Sobrecarga de tráfego (Botnet).</label></li>
+                    <li><label><input type="radio" name="q2" value="E"> E. Keylogger oculto.</label></li>
+                </ul>
+            </div>
+
+            <div class="question">
+                <h3>3. A Engenharia Social é definida no site como uma técnica que visa o quê?</h3>
+                <ul class="options">
+                    <li><label><input type="radio" name="q3" value="A"> A. Acesso ao kernel.</label></li>
+                    <li><label><input type="radio" name="q3" value="B"> B. Manipulação psicológica para enganar pessoas.</label></li>
+                    <li><label><input type="radio" name="q3" value="C"> C. Explorar falhas de software.</label></li>
+                    <li><label><input type="radio" name="q3" value="D"> D. Ataques de força bruta.</label></li>
+                    <li><label><input type="radio" name="q3" value="E"> E. Bloquear usuários legítimos.</label></li>
+                </ul>
+            </div>
+
+            <div class="question">
+                <h3>4. Qual é o tipo de software malicioso cujo objetivo principal é bloquear o acesso ou criptografar os dados da vítima, exigindo um pagamento para o retorno?</h3>
+                <ul class="options">
+                    <li><label><input type="radio" name="q4" value="A"> A. Trojan</label></li>
+                    <li><label><input type="radio" name="q4" value="B"> B. Worm</label></li>
+                    <li><label><input type="radio" name="q4" value="C"> C. Malware Polimórfico</label></li>
+                    <li><label><input type="radio" name="q4" value="D"> D. Ransomware</label></li>
+                    <li><label><input type="radio" name="q4" value="E"> E. Phishing</label></li>
+                </ul>
+            </div>
+
+            <div class="question">
+                <h3>5. O que a seção "Dicas para uma Internet Segura" recomenda para dificultar ataques de força bruta?</h3>
+                <ul class="options">
+                    <li><label><input type="radio" name="q5" value="A"> A. Combinar letras, números e símbolos.</label></li>
+                    <li><label><input type="radio" name="q5" value="B"> B. Desativar o JavaScript.</label></li>
+                    <li><label><input type="radio" name="q5" value="C"> C. Não postar fotos.</label></li>
+                    <li><label><input type="radio" name="q5" value="D"> D. Instalar um Firewall.</label></li>
+                    <li><label><input type="radio" name="q5" value="E"> E. Fazer backup na nuvem.</label></li>
+                </ul>
+            </div>
+
+            <div class="question">
+                <h3>6. De acordo com a seção "Adultização nas Redes", qual é a definição desse fenômeno?</h3>
+                <ul class="options">
+                    <li><label><input type="radio" name="q6" value="A"> A. Pressão por usar softwares de produtividade.</label></li>
+                    <li><label><input type="radio" name="q6" value="B"> B. Uso de redes por menores.</label></li>
+                    <li><label><input type="radio" name="q6" value="C"> C. Exposição precoce a conteúdos adultos.</label></li>
+                    <li><label><input type="radio" name="q6" value="D"> D. Orientação sobre uso das redes.</label></li>
+                    <li><label><input type="radio" name="q6" value="E"> E. Criação de contas bancárias.</label></li>
+                </ul>
+            </div>
+
+            <div class="question">
+                <h3>7. Qual é um dos "Riscos psicológicos" da adultização?</h3>
+                <ul class="options">
+                    <li><label><input type="radio" name="q7" value="A"> A. Risco de Ransomware.</label></li>
+                    <li><label><input type="radio" name="q7" value="B"> B. Perda de dados.</label></li>
+                    <li><label><input type="radio" name="q7" value="C"> C. Ansiedade, distorção de identidade e pressão social.</label></li>
+                    <li><label><input type="radio" name="q7" value="D"> D. Vício em jogos.</label></li>
+                    <li><label><input type="radio" name="q7" value="E"> E. Queda escolar.</label></li>
+                </ul>
+            </div>
+
+            <div class="question">
+                <h3>8. O que é um Ataque Hacker, de acordo com o site?</h3>
+                <ul class="options">
+                    <li><label><input type="radio" name="q8" value="A"> A. Programa disfarçado.</label></li>
+                    <li><label><input type="radio" name="q8" value="B"> B. Tentativas de acesso indevido a sistemas e dados.</label></li>
+                    <li><label><input type="radio" name="q8" value="C"> C. Exposição precoce.</label></li>
+                    <li><label><input type="radio" name="q8" value="D"> D. Manipulação psicológica.</label></li>
+                    <li><label><input type="radio" name="q8" value="E"> E. Criação de senhas fortes.</label></li>
+                </ul>
+            </div>
+
+            <div class="question">
+                <h3>9. Qual é o papel de pais e educadores em relação ao uso da internet?</h3>
+                <ul class="options">
+                    <li><label><input type="radio" name="q9" value="A"> A. Proibir redes sociais.</label></li>
+                    <li><label><input type="radio" name="q9" value="B"> B. Apenas monitorar senhas.</label></li>
+                    <li><label><input type="radio" name="q9" value="C"> C. Orientar o uso e incentivar diálogo.</label></li>
+                    <li><label><input type="radio" name="q9" value="D"> D. Instalar controle parental sem diálogo.</label></li>
+                    <li><label><input type="radio" name="q9" value="E"> E. Denunciar todas as plataformas.</label></li>
+                </ul>
+            </div>
+
+            <div class="question">
+                <h3>10. O que se deve evitar compartilhar em redes sociais?</h3>
+                <ul class="options">
+                    <li><label><input type="radio" name="q10" value="A"> A. Opiniões políticas.</label></li>
+                    <li><label><input type="radio" name="q10" value="B"> B. Músicas favoritas.</label></li>
+                    <li><label><input type="radio" name="q10" value="C"> C. Fake News.</label></li>
+                    <li><label><input type="radio" name="q10" value="D"> D. Documentos, localização ou dados pessoais.</label></li>
+                    <li><label><input type="radio" name="q10" value="E"> E. Fotos de paisagens.</label></li>
+                </ul>
+            </div>
+
+            <button type="submit" class="submit-btn">Enviar Respostas</button>
+        </form>
+
+        <div id="resultados"></div>
+    </div>
+
+    <script>
+        const gabarito = {
+            q1: "C",
+            q2: "B",
+            q3: "B",
+            q4: "D",
+            q5: "A",
+            q6: "C",
+            q7: "C",
+            q8: "B",
+            q9: "C",
+            q10: "D"
+        };
+
+        document.getElementById('cyberQuiz').addEventListener('submit', function (e) {
+            e.preventDefault();
+            let acertos = 0;
+            const total = Object.keys(gabarito).length;
+
+            for (let key in gabarito) {
+                const marcada = document.querySelector(`input[name="${key}"]:checked`);
+                if (marcada && marcada.value === gabarito[key]) acertos++;
+            }
+
+            const resultadosDiv = document.getElementById('resultados');
+            resultadosDiv.innerHTML = `
+                <h2>Resultado Final</h2>
+                <p>Você acertou <strong>${acertos}</strong> de <strong>${total}</strong> questões.</p>
+                <p>${acertos >= 7 ? "Excelente! Você demonstrou ótimo conhecimento sobre o tema 🌐" :
+                    acertos >= 4 ? "Bom resultado! Continue se conscientizando 💻" :
+                        "Atenção! É importante aprender mais sobre segurança e uso consciente da internet ⚠️"}</p>
+                <div class="gabarito">
+                    <h3>Gabarito:</h3>
+                    <p>1.C | 2.B | 3.B | 4.D | 5.A | 6.C | 7.C | 8.B | 9.C | 10.D</p>
+                </div>
+            `;
+        });
+    </script>
+</body>
+</html>
